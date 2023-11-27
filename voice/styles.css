@@ -61,7 +61,7 @@
 }
 
 button.vfrc-button::after {
-    content: "Start New Chat";
+    content: "";
     content: "Starta Ny Chatt";
     content: "Új beszélgetés indítása";
     content: "Commencer une nouvelle conversation";
