@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.vfrc-launcher {
+    background-color: #484848;
+}
+.vfrc-launcher:hover {
+    background-color: #000000;
+}
+
+.vfrc-chat {
+    background-color: #000000;
+}
+
+.vfrc-header,
+.vfrc-footer {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar {
+    border-left: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.vfrc-assistant-info--title {
+    color: #ffffff;
+}
+
+.vfrc-assistant-info--description,
+.vfrc-chat--session-time,
+.vfrc-timestamp,
+.vfrc-footer--watermark {
+    color: rgba(255, 255, 255, 0.8);
+}
+.vfrc-assistant-info--description a,
+.vfrc-chat--session-time a,
+.vfrc-timestamp a,
+.vfrc-footer--watermark a {
+    color: #ffffff;
+}
+
+.vfrc-user-response .vfrc-message {
+    background-color: #000000;
+}
+
+.vfrc-footer .vfrc-chat-input input {
+    background-image: none;
+}
+.vfrc-footer .vfrc-chat-input input::-moz-placeholder {
+    color: transparent;
+}
+.vfrc-footer .vfrc-chat-input input::placeholder {
+    color: transparent;
+}
+/*.vfrc-footer .vfrc-chat-input input:-moz-placeholder-shown {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Message...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Meddela...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Üzenet...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Message...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Nachricht...</text></svg>");
+    background-repeat: no-repeat;
+} */
+.vfrc-footer .vfrc-chat-input input:placeholder-shown {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Message...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Meddela...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Üzenet...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Message...</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Nachricht...</text></svg>");
+    background-repeat: no-repeat;
+}
+.vfrc-footer button.vfrc-button {
+    position: relative;
+    background-color: darkgreen !important;
+    color: transparent;
+}
+.vfrc-footer button.vfrc-button::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: #ffffff;
+}
+.vfrc-footer .vfrc-chat-input--button .vfrc-bubble {
+    background-color: #AA0000;
+}
+
+.vfrc-prompt {
+    background-color: #000000;
+}
+.vfrc-prompt button {
+    position: relative;
+    color: transparent;
+}
+.vfrc-prompt button::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: #ffffff;
+}
+
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "End Chat";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Avsluta Chatt";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Beszélgetés vége";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Terminer la conversation";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Chat Beenden";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Cancel";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Avbryt";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Mégse";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Annulé";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Schließen";
+}
+
+button.vfrc-button::after {
+    content: "Start New Chat";
+    content: "Starta Ny Chatt";
+    content: "Új beszélgetés indítása";
+    content: "Commencer une nouvelle conversation";
+    content: "Neuen Chat Starten";
+}
