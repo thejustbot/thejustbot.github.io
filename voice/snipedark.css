@@ -20,9 +20,7 @@
 
 
 
-.vfrc-footer .vfrc-chat-input input {
-    background-image: none;
-}
+
 .vfrc-footer .vfrc-chat-input input::-moz-placeholder {
     color: transparent;
 }
