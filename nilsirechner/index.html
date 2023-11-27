@@ -1,0 +1,890 @@
+<html lang="de" class="calc accordion socialbar  eu no-touchevents js" data-time="1701109835">
+<head><!-- (c) 2006-2023 Andre Massow britnex@gmail.com -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-ico; charset=binary">
+    <link rel="icon" href="/favicon.ico" type="image/x-ico; charset=binary">
+    <link rel="preload" href="/fonts/glyphicons-halflings-regular.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="/css/web2.0calc.css?v135">
+    <link rel="canonical" href="https://web2.0rechner.de/">
+    <meta name="generator" content="0calc10.0">
+    <meta name="description"
+          content="Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: Mathematik, Physik und Technik. Mit Vektor/Matrixrechner, Gleichungslöser, komplexen Zahlen und Einheitenumrechnung.">
+    <meta name="keywords"
+          content="Taschenrechner, Rechner, Web Rechner, Wissenschaftlicher Taschenrechner, Onlinerechner, Online Taschenrechner, Web 2.0, Mathematik">
+    <title>Web 2.0 Taschenrechner
+    </title><!-- FOUC -->
+    <style>body {
+        background-color: #36404f;
+    }
+
+    nav a {
+        color: white;
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://web2.0rechner.de/img/bookmarkscreenshot.png?q=2%2B2">
+    <meta property="og:url" content="https://web2.0rechner.de/">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="135748171745">
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7454138377622437"
+            crossorigin="anonymous"></script>
+</head>
+<body class="axleft axright  wdetect">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a href="/" class="navbar-brand"><img src="/img/web2.0rechner.png" alt="web2.0rechner"
+                                                  class="img-responsive"></a></div>
+        <nav>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav overtoggle pull-right">
+                    <li class=""><a href="/anmelden/"><span>Anmelden</span></a></li>
+                    <li class="nohover ">
+                        <button id="loginbtn" class="loginbtn btn btn-primary dropdown-toggle" type="button"><span
+                                class="glyphicon glyphicon-user"></span> Login <span class="caret"></span></button>
+                        <div id="logindropmenu" class="dropdown-menu">
+                            <form class="form-horizontal" method="post" action="https://web2.0rechner.de/">
+                                <div class=""><label for="loginusername">Benutzername</label> <input class="textfield"
+                                                                                                     type="text"
+                                                                                                     value=""
+                                                                                                     placeholder=""
+                                                                                                     id="loginusername"
+                                                                                                     name="loginusername">
+                                </div>
+                                <div class=""><label for="loginpassword">Passwort</label> <input class="textfield"
+                                                                                                 type="password"
+                                                                                                 placeholder=""
+                                                                                                 id="loginpassword"
+                                                                                                 name="loginpassword">
+                                </div>
+                                <button type="submit" name="controller" value="login"
+                                        class="btn btn-primary pull-right">Login
+                                </button>
+                                <small class="pull-left passwordrecovery"><a href="/anmelden/resetpassword.html">Passwort&nbsp;vergessen?</a></small>
+                                <div class="clearfix"></div>
+                                <hr>
+                                <input type="hidden" name="logincookies" value="1"></form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav overtoggle autosize pull-right" id="menubar">
+                    <li data-prio="3" id="menuhome" title="Rechner" class="active"><a href="/"><span
+                            class="glyphicon glyphicon-home" aria-hidden="true"></span><span>Rechner</span></a></li>
+                    <li data-prio="1" id="menuforum" title="Forum" class=""><a class="dropdown-toggle"
+                                                                               href="/fragen/"><span
+                            class="glyphicon glyphicon-list" aria-hidden="true"></span>&nbsp;<span>Forum</span><sup
+                            id="newquestioncount" class="badge">+0</sup></a></li>
+                    <li data-prio="4" id="menuformulary" title="Formeln" class="dropdown"><a data-toggle="dropdown"
+                                                                                             class="dropdown-toggle"
+                                                                                             href="/formelsammlung/"><span
+                            class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;<span>Formeln</span> <b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/formelsammlung/mathematik">Mathematik</a></li>
+                        </ul>
+                    </li>
+                    <li data-prio="3" id="menuhelp" title="Hilfe" class="dropdown"><a data-toggle="dropdown"
+                                                                                      class="dropdown-toggle"
+                                                                                      href="/hilfe/"><span
+                            class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&nbsp;<span>Hilfe</span>
+                        <b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="display: none;">
+                            <li><a href="/hilfe/komplexe-zahlen">Komplexe Zahlen</a></li>
+                            <li><a href="/hilfe/integralrechnung">Integralrechnung</a></li>
+                            <li><a href="/hilfe/differentialrechnung">Differentialrechnung</a></li>
+                            <li><a href="/hilfe/gleichungen">Gleichungen</a></li>
+                            <li><a href="/hilfe/funktionsgraphen">Funktionsgraphen</a></li>
+                            <li><a href="/hilfe/linalg">Lineare Algebra - Vektoralgebra</a></li>
+                            <li><a href="/hilfe/zahlentheorie">Zahlentheorie</a></li>
+                            <li><a href="/hilfe/prozentrechnung">Prozentrechnung</a></li>
+                            <li><a href="/hilfe/standard-funktionen">Standard-Funktionen <span
+                                    class="glyphicon glyphicon-fire" aria-hidden="true"></span></a></li>
+                            <li><a href="/hilfe/wahrscheinlichkeitsrechnung">Wahrscheinlichkeitsrechnung</a></li>
+                            <li><a href="/hilfe/trigonometrie">Trigonometrie</a></li>
+                            <li><a href="/hilfe/einheiten-umrechnung">Einheiten-Umrechnung</a></li>
+                            <li><a href="/hilfe/einheiten">Rechnen mit Einheiten</a></li>
+                        </ul>
+                    </li>
+                    <li data-prio="1" class="dropdown" title="Über Uns"><a data-toggle="dropdown"
+                                                                           class="dropdown-toggle"
+                                                                           href="/impressum/"><span
+                            class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;<span>Über Uns</span>
+                        <b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="display: none;">
+                            <li><a href="/impressum/">Impressum</a></li>
+                            <li><a href="/datenschutz/">Datenschutzrichtlinie</a></li>
+                            <li><a href="/nutzungsbedingungen/">Nutzungsbedingungen</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/credits/" rel="nofollow">Credits</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://plus.google.com/108772686782622828406/posts"><span
+                                    class="glyphicon glyphicon-globe"></span> Google+</a></li>
+                            <li><a target="_blank"
+                                   href="https://www.facebook.com/Web-20-scientific-calculator-204577902909300/"><span
+                                    class="glyphicon glyphicon-globe"></span> Facebook</a></li>
+                            <li class="divider"></li>
+                            <li><a href="mailto:britnex@gmail.com"><span class="glyphicon glyphicon-envelope"></span>
+                                Email</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">&nbsp;</a></li>
+                </ul>
+            </div><!--/.navbar-collapse --></nav>
+    </div>
+</div>
+<div align="center" class="calc5"><!-- calc-horz -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7454138377622437" data-ad-slot="4697210794"
+         data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="calccontainer" id="calccontainer">
+    <div id="display">
+        <div><img id="graph" class="img-responsive" alt="graph" src="/img/empty.png"><img id="preview"
+                                                                                          class="img-responsive"
+                                                                                          alt="preview"
+                                                                                          src="data:image/png;base64,R0lGODlhDwAIAPAAAC85RS85RSwAAAAADwAIAEAIFAABCBxIsKDBgwgTKlzIsKHDhwEBADs="
+                                                                                          style="display: inline;"><img
+                id="result" class="img-responsive" alt="result" src="/img/empty.png"><span id="error"></span></div>
+    </div>
+    <div class="center"><label class="btn btn-default btn-sm readonly" id="keyboardbtn"
+                               title="toggle on-screen keyboard"><input type="checkbox">&nbsp;<img
+            src="/img/iconmonstr-keyboard-2.svg" alt="keyboard"></label>
+        <div class="inputs"><input id="syntax" type="text" value=""><input id="input" type="text" autocomplete="off"
+                                                                           spellcheck="false" name="input" value=""
+                                                                           tabindex="1" class="disable1d"
+                                                                           autocorrect="off" autocapitalize="off">
+            <div id="inputhelper"><span class="title">&nbsp;</span><span class="glyphicon glyphicon-option-vertical"
+                                                                         title="input helpers"></span></div>
+        </div>
+        <div class="helper"></div>
+        <div id="btns" class="btns">
+            <div class="subcmd">
+                <button id="Btn2nd" class="f">2<b>nd</b></button>
+                <button title="Konstante Pi≈3.14" id="BtnPi" class="f"><span>π<sup>const▼</sup></span><span class="sec">const</span>
+                </button>
+                <button title="Beispiel: 3*e, 10e6, 3.5e9" id="BtnE" class="f br"><span>e<sup>i</sup></span><span
+                        class="sec">i</span></button>
+                <button id="BtnMatrix" class="o"><span>[∷]</span><span class="sec">[∷]</span></button>
+                <button id="BtnVar" class="o br"><span>x<sup>=</sup></span><span class="sec">=</span></button>
+                <button id="BtnParanL" class="bl"><span>(<sup>[</sup></span><span class="sec">[</span></button>
+                <button id="BtnColon" class="">,</button>
+                <button id="BtnParanR" class="br"><span>)<sup>]</sup></span><span class="sec">]</span></button>
+                <button title=" Move Cursor" id="BtnLeft" class=""><i
+                        class="leftright glyphicon glyphicon-transfer"></i><i
+                        class="left glyphicon glyphicon-arrow-left"></i><i
+                        class="right glyphicon glyphicon-arrow-right"></i></button>
+                <button title=" Undo Change" id="BtnBack" class=""><i class="glyphicon glyphicon-share-alt"></i>
+                </button>
+            </div>
+            <div>
+                <button title="Sinus, sin(x)" id="BtnSin" class="f"><span>sin<sup>-1</sup></span><span
+                        title="Arkussinus (sin^-1), asin(x)" class="sec">asin</span></button>
+                <button title="Sinus Hyperbolikus, sinh(x)" id="BtnSinH" class="f"><span>sinh<sup>-1</sup></span><span
+                        title="Arkussinus Hyperbolikus, asinh(x)" class="sec">asinh</span></button>
+                <button title="Kotangens, cot(x)" id="BtnCot" class="f br"><span>cot<sup>-1</sup></span><span
+                        class="sec">acot</span></button>
+                <button title="y-te Wuzel der Zahl x, sqrt(x, y)" id="BtnSqrtY" class="o"><i>y</i><b>√</b>x</button>
+                <button title="potenzieren, x^y" id="BtnPowXY" class="br o">x<i>y</i></button>
+                <button id="Btn7" class="bl">7</button>
+                <button id="Btn8" class="">8</button>
+                <button id="Btn9" class="br">9</button>
+                <button id="BtnDiv" class="op noshift"><span>÷</span><span
+                        title="Division mit Rest, x mod y  Beispiel: 123^345 mod 127" class="sec">mod</span></button>
+                <button id="BtnClear" class="op">C</button>
+            </div>
+            <div>
+                <button title="Kosinus, cos(x)" id="BtnCos" class="f"><span>cos<sup>-1</sup></span><span
+                        title="Arkuskosinus (cos^-1), acos(x)" class="sec">acos</span></button>
+                <button title="Kosinus Hyperbolikus, cosh(x)" id="BtnCosH" class="f"><span>cosh<sup>-1</sup></span><span
+                        title="Arkuskosinus Hyperbolikus, acosh(x)" class="sec">acosh</span></button>
+                <button title="Sekans, sec(x)" id="BtnSec" class="f br"><span>sec<sup>-1</sup></span><span class="sec">asec</span>
+                </button>
+                <button title="Kubikwurzel x, sqrt3(x)" id="BtnSqrt3" class="o"><i>3</i><b>√</b>x</button>
+                <button id="BtnPow3" class="br o">x<i>3</i></button>
+                <button id="Btn4" class="bl">4</button>
+                <button id="Btn5" class="">5</button>
+                <button id="Btn6" class="br">6</button>
+                <button id="BtnMult" class="op"><span>×</span><span
+                        title="Vektor Kreuzprodukt, x # y   Beispiel: (1, 2, 3)#(4, 5, -6)" class="sec">#</span>
+                </button>
+                <p>
+                    <button id="BtnCalc" class="op">=</button>
+                    <button id="BtnCalcHex" class="op">=<sub>hex</sub></button>
+                </p>
+            </div>
+            <div>
+                <button title="Tangens, tan(x)" id="BtnTan" class="f"><span>tan<sup>-1</sup></span><span
+                        title="Arkustangens (tan^-1), atan(x)" class="sec">atan</span></button>
+                <button title="Tangens Hyperbolikus, tanh(x)" id="BtnTanH" class="f"><span>tanh<sup>-1</sup></span><span
+                        title="Arc Hyperbolic Tangent, atanh(x)" class="sec">atanh</span></button>
+                <button title="Kosekans, csc(x)" id="BtnCsc" class="f br"><span>csc<sup>-1</sup></span><span
+                        class="sec">acsc</span></button>
+                <button title="Wurzel der Zahl x, sqrt(x)" id="BtnSqrt" class="o"><b>√</b>x</button>
+                <button id="BtnPow2" class="br o">x<i>2</i></button>
+                <button id="Btn1" class="bl">1</button>
+                <button id="Btn2" class="">2</button>
+                <button id="Btn3" class="br">3</button>
+                <button id="BtnMinus" class="op">-</button>
+                <p>
+                    <button id="BtnCalcBin" class="op">=<sub>bin</sub></button>
+                </p>
+            </div>
+            <div>
+                <button title="Binomialkoeffizient, ncr(n, r)   Beispiel: ncr(49, 6)" id="BtnNcR" class="f">ncr</button>
+                <button title="Permutation, npr(n, r)   Beispiel: npr(7, 3)" id="BtnNpR" class="f">npr</button>
+                <button id="BtnPer" class="f br">%</button>
+                <button title="Logarithmus der Zahl x zur Basis 10, log(x) oder Basis y, log(x, y)" id="BtnLog10"
+                        class="o">log
+                </button>
+                <button id="BtnPow10" class="br o">10<i>x</i></button>
+                <button id="Btn0" class="bl">0</button>
+                <button id="BtnSign" class="">±</button>
+                <button id="BtnDot" class="br">.</button>
+                <button id="BtnPlus" class="op">+</button>
+                <p>
+                    <button id="BtnCalcDec" class="op">=<sub>dec</sub></button>
+                    <button title="Gleichung, Beispiel: x^2+2x-2=0" id="BtnCalcEqual" class="op">x=y</button>
+                </p>
+            </div>
+            <div class="dropdowns nonprogrammer">
+                <button class="f"></button>
+                <button class="f"></button>
+                <button class="f br"></button>
+                <button class="o" id="BtnOpD1"><i class="glyphicon glyphicon-chevron-down"></i></button>
+                <button class="o br" id="BtnOpD2"><i class="glyphicon glyphicon-chevron-down"></i></button>
+                <button class="bl"></button>
+                <button class=""></button>
+                <button class="br"></button>
+                <button class="op"></button>
+                <button class="op"></button>
+            </div>
+            <div class="btnpop nonprogrammer">
+                <button title="Logarithmus der Zahl x zur Basis e, ln(x)" id="ButtonLn" class="o">ln</button>
+                <button title="Exponentialfunktion, exp(x), e^x" id="ButtonExp" class="o">e<i>x</i></button>
+                <button title="Logarithmus der Zahl x zur Basis 2, lg2(x)" id="ButtonLg2" class="o">lg2</button>
+                <button id="Button2X" class="o">2<i>x</i></button>
+            </div>
+            <hr class="programmer">
+            <div class="programmer">
+                <button id="BtnOr" class="f">or</button>
+                <button id="BtnAnd" class="f">and</button>
+                <button id="BtnXor" class="f br">xor</button>
+                <button title="Logarithmus der Zahl x zur Basis e, ln(x)" id="ButtonLn_1" class="o">ln</button>
+                <button title="Exponentialfunktion, exp(x), e^x" id="ButtonExp_1" class="o br">e<i>x</i></button>
+                <button id="BtnHexA" class="bl">A</button>
+                <button id="BtnHexB" class="">B</button>
+                <button id="BtnHexC" class="br">C</button>
+                <button id="Btn0b" class="op">0b</button>
+                <p>
+                    <button id="BtnCalcHex_1" class="op">=<sub>hex</sub></button>
+                </p>
+            </div>
+            <div class="programmer">
+                <button title="Left Shift, x shl y" id="BtnLsh" class="f"><span>lsh<sup>rol</sup></span><span
+                        title="Rotate Left, x rol y" class="sec">rol</span></button>
+                <button title="Right Shift, x rsh y" id="BtnRsh" class="f"><span>rsh<sup>ror</sup></span><span
+                        title="Rotate Right, x ror y" class="sec">ror</span></button>
+                <button id="BtnDummy4" class="f br"></button>
+                <button title="Logarithmus der Zahl x zur Basis 2, lg2(x)" id="ButtonLg2_1" class="o">lg2</button>
+                <button id="Button2X_1" class="o br">2<i>x</i></button>
+                <button id="BtnHexD" class="bl">D</button>
+                <button id="BtnHexE" class="">E</button>
+                <button id="BtnHexF" class="br">F</button>
+                <button id="Btn0x" class="op">0x</button>
+                <p>
+                    <button id="BtnCalcBin_1" class="op">=<sub>bin</sub></button>
+                </p>
+            </div>
+            <div class="dropdowns programmer"><p></p></div>
+            <div class="" id="matrixhelper" data-input="">
+                <div><span class="v m">&nbsp;</span><span class="m">&nbsp;</span><span class="m">&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+                </div>
+                <div><span class="v">&nbsp;</span><span class="m">&nbsp;</span><span
+                        class="m">&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div>
+                <div><span class="v">&nbsp;</span><span class="m">&nbsp;</span><span
+                        class="m">&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div>
+                <div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+                </div>
+                <div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="btn-group" id="quicklink"></div>
+            <label title="Grad" class="option"> <span class="pull-right"> <input type="radio" value="deg"
+                                                                                 checked="checked" name="radi"
+                                                                                 id="trigodeg"> <span
+                    class="desc"> <span class="label">Deg</span> <span class="sym">360º</span></span></span></label>
+            <label title="Bogenmaß" class="option"> <input type="radio" value="rad" name="radi" id="trigorad"> <span
+                    class="desc"><span class="label">Rad</span> <span class="sym">2π</span></span></label>
+            <div id="hist" class="history btn-group">
+                <button type="button" class="last btn">-- Verlauf --</button>
+                <button type="button" class="btn dropdown-toggle pull-right"><span
+                        class="glyphicon glyphicon-chevron-down"></span> <span
+                        class="glyphicon glyphicon-chevron-up"></span></button>
+            </div>
+            <button class="btn btn-default btn-sm no" type="button"><span class="glyphicon glyphicon-arrow-down"></span>
+            </button>
+            <button class="btn btn-default btn-sm no" type="button"><span class="glyphicon glyphicon-arrow-up"></span>
+            </button>
+            <button id="addclipboard" class="btn btn-default btn-sm no" type="button" title="Clipboard"><span
+                    class="glyphicon glyphicon-modal-window" aria-hidden="true"></span></button>
+            <a title="Funktionsgraphen" class="btn btn-default btn-sm no action1" href="/graphs/?create"
+               target="_blank"><span class="glyphicon glyphicon-screenshot"></span></a></div>
+    </div>
+    <div id="histframe" class="center init">
+        <div>
+            <button type="button" class="close">×</button>
+            <a href="#" id="clearhistory">Verlauf löschen</a></div>
+        <ul></ul>
+    </div>
+    <div id="clipboardframe" class="center clipboard">
+        <div>
+            <button type="button" class="close">×</button>
+        </div>
+        <h5>Clipboard
+        </h5><textarea></textarea></div>
+    <div id="symbolics">
+        <div class="container symbolic" id="symbolic_diff">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Ableitung:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_int">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Integral:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_roots">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Nullstellen:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_limit">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Grenzwert:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_exponentialize">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Exponentialschreibweise:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_det">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Determinante:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_inv">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Inverse:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container symbolic" id="symbolic_transpose">
+            <div class="row">
+                <div class="col col-md-12">
+                    <div><h3>Transponierte:</h3>
+                        <p class="input"><a href="#"></a></p>
+                        <p class="output"><img class="img-responsive" src="/img/empty.png" alt="output"></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container board second">
+        <div class="row">
+            <div class="col col-md-12">
+                <div>
+                    <form method="get" action="/fragen/"><span class="glyphicon head glyphicon-th-list"></span>
+                        <h3>&nbsp;<a href="/fragen/"
+                                     title="Durchsuche interessante Mathe Fragen und vielleicht kannst du bei der Beantwortung helfen. ">Mathe
+                            Forum</a></h3>
+                        <div id="carouselquestions" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselquestions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselquestions" data-slide-to="1" class=""></li>
+                                <li data-target="#carouselquestions" data-slide-to="2" class=""></li>
+                                <li data-target="#carouselquestions" data-slide-to="3" class=""></li>
+                                <li data-target="#carouselquestions" data-slide-to="4" class=""></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="carousel-caption"><a
+                                            href="/fragen/hallo-kann-mir-hier-jemand-diese-gleichung-nach-s">Hallo kann
+                                        mir hier jemand diese Gleichung nach S auflösen: y=R-1/2*sqrt(4*R^2-S^2)?</a>
+                                    </div>
+                                </div>
+                                <div class="item ">
+                                    <div class="carousel-caption"><a href="/fragen/schlecht">schlecht!!!!!?</a></div>
+                                </div>
+                                <div class="item ">
+                                    <div class="carousel-caption"><a href="/fragen/hczcfhi">hczcfhi?</a></div>
+                                </div>
+                                <div class="item ">
+                                    <div class="carousel-caption"><a href="/fragen/wasserbecken_1">Wasserbecken?</a>
+                                    </div>
+                                </div>
+                                <div class="item ">
+                                    <div class="carousel-caption"><a href="/fragen/injektivit-t-und-surjektivit-t">Injektivität
+                                        und Surjektivität?</a></div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carouselquestions" role="button"
+                               data-slide="prev"><span class="glyphicon glyphicon-chevron-left"
+                                                       aria-hidden="true"></span><span
+                                    class="sr-only">Previous</span></a><a class="right carousel-control"
+                                                                          href="#carouselquestions" role="button"
+                                                                          data-slide="next"><span
+                                class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span
+                                class="sr-only">Next</span></a></div>
+                        <button class="btn btn-primary pull-right" type="submit"><span class="glyphicon glyphicon-list"
+                                                                                       aria-hidden="true"></span> Fragen
+                            ansehen
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><h1 class="text-center">Wissenschaftlicher Taschenrechner</h1>
+                <p class="text-justify">web2.0rechner unterstützt mathematische Funktionen für trigonometrische
+                    Berechnungen, logarithmische und exponentielle Funktionen und Gleitkomma-Arithmetik mit große
+                    Zahlen. Für Hausaufgaben aus Schule und Studium, sind die erweiterten Funktionen für
+                    Kurvendiskussion, Differentialrechnung, lineare Algebra und der Gleichnungslöser integriert. </p>
+                <div class="text-center"><a target="_blank"
+                                            href="https://www.facebook.com/Web-20-scientific-calculator-204577902909300/">https://www.facebook.com/Web-20-scientific-calculator-204577902909300/</a>
+                </div>
+                <hr>
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h4 class="panel-title"><span
+                                class="glyphicon glyphicon-check"></span> <a class="toggle" href="#collapse_formula"
+                                                                             data-parent="#accordion"
+                                                                             data-toggle="collapse"> Formeldarstellung
+                            <span class="caret"></span></a></h4></div>
+                        <div class="panel-collapse collapse" id="collapse_formula">
+                            <div class="panel-body text-center"><a
+                                    href="?q=0.2%5E%281-sqrt%282.5%29%29%2Fsqrt3%28125%5E2-0.3%5E3%29-cos%28pi%2Fsqrt%285%29%29"><img
+                                    data-src="img/exampleformula.png" src="img/loading.gif"
+                                    alt="0.2^(1-sqrt(2.5))/sqrt3(125^2-0.3^3)-cos(pi/sqrt(5))"></a></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h4 class="panel-title"><span
+                                class="glyphicon glyphicon-check"></span> <a class="toggle" href="#collapse_largenumber"
+                                                                             data-parent="#accordion"
+                                                                             data-toggle="collapse"> Unterstützung für
+                            große Zahlen <span class="caret"></span></a></h4></div>
+                        <div class="panel-collapse collapse" id="collapse_largenumber">
+                            <div class="panel-body text-center"><a href="?q=2%5E128-1"> <img
+                                    data-src="img/examplelargenumber.png" src="img/loading.gif" alt="2^128-1"></a></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h4 class="panel-title"><span
+                                class="glyphicon glyphicon-check"></span> <a class="toggle" href="#collapse_equation"
+                                                                             data-parent="#accordion"
+                                                                             data-toggle="collapse"> Gleichungslöser
+                            <span class="caret"></span></a></h4></div>
+                        <div class="panel-collapse collapse" id="collapse_equation">
+                            <div class="panel-body text-center"><a href="?q=2x%5E2%2B3x-3%3D0"> <img
+                                    data-src="img/exampleequation.png" src="img/loading.gif" alt="2x^2+3x-3=0"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h4 class="panel-title"><span
+                                class="glyphicon glyphicon-check"></span> <a class="toggle" href="#collapse_widgets"
+                                                                             data-parent="#accordion"
+                                                                             data-toggle="collapse"> Taschenrechner
+                            Widgets <span class="caret"></span></a></h4></div>
+                        <div class="panel-collapse collapse" id="collapse_widgets">
+                            <div class="panel-body text-center"><a href="widgets/"> <img
+                                    data-src="img/examplewidgets.png" src="img/loading.gif"
+                                    alt="Bespiel Screenshots"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div data-ride="carousel" class="carousel slide" id="carousel-teaser">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-teaser"></li>
+                        <li data-slide-to="1" data-target="#carousel-teaser"></li>
+                        <li data-slide-to="2" data-target="#carousel-teaser"></li>
+                        <li data-slide-to="3" data-target="#carousel-teaser"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active"><img alt="Teaser" src="img/teaser_v1-min.png">
+                            <div class="carousel-caption"><h3>web2.0rechner Schnellstart</h3>
+                                <p>Diese kurze Anleitung gibt einen kleinen Überblick, über die effiziente Verwendung
+                                    dieses Taschenrechners.</p></div>
+                        </div>
+                        <div class="item"><img alt="Teaser" src="img/teaser_v1-min.png">
+                            <div class="carousel-caption"><h3>Kapitel 1: Mauseingabe</h3>
+                                <p>Die Bedienung mit der Maus ist vergleichbar zu einem klassischen Taschenrechner
+                                    möglich.</p></div>
+                        </div>
+                        <div class="item"><img alt="Teaser" src="img/teaser_v1-min.png">
+                            <div class="carousel-caption"><h3>Die Bedienung mit der Maus ist vergleichbar zu einem
+                                klassischen Taschenrechner möglich.</h3>
+                                <p>Eingaben mit der Tastatur werden in der Eingabezeile vorgenommen und können in der
+                                    Formelvorschau vorab kontrolliert werden. Die Taste ↵ startet die Berechnung.</p>
+                            </div>
+                        </div>
+                        <div class="item"><img alt="Teaser" src="img/teaser_v1-min.png">
+                            <div class="carousel-caption"><h3>Kapitel 3: Funktionen</h3>
+                                <p>Viele Funktionen sind bereits implementiert und werden über den Funktionsnamen, mit
+                                    den Argumenten in runden Klammern, aufgerufen. Beispiel: sin(90) <b>sin(90)</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-slide="prev" href="#carousel-teaser" class="left carousel-control"> <span
+                            class="glyphicon glyphicon-chevron-left"></span></a> <a data-slide="next"
+                                                                                    href="#carousel-teaser"
+                                                                                    class="right carousel-control">
+                    <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <ul class="seealso ">
+                    <li class="col-md-2 text-center"><a href="/hilfe/komplexe-zahlen">Komplexe Zahlen</a><br>(2+2i)*(3+3i)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/integralrechnung">Integralrechnung</a><br>int(x^2)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/differentialrechnung">Differentialrechnung</a><br>diff(x^2)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/gleichungen">Gleichungen</a><br>x^2+2x-1=9
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/funktionsgraphen">Funktionsgraphen</a><br>plot(sin(x),x=0..360)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/linalg">Lineare Algebra - Vektoralgebra</a><br>(1,
+                        2, 3)#(4, 5, 6)
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">&nbsp;</div>
+            </div>
+            <div class="row">
+                <ul class="seealso ">
+                    <li class="col-md-2 text-center"><a href="/hilfe/zahlentheorie">Zahlentheorie</a><br>sum(x,x=1..10)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/prozentrechnung">Prozentrechnung</a><br>100+5%
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/standard-funktionen">Standard-Funktionen <span
+                            class="glyphicon glyphicon-fire" aria-hidden="true"></span></a><br>sqrt(9)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/wahrscheinlichkeitsrechnung">Wahrscheinlichkeitsrechnung</a><br>ncr(49,
+                        6)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/trigonometrie">Trigonometrie</a><br>sin(90)
+                    </li>
+                    <li class="col-md-2 text-center"><a href="/hilfe/einheiten-umrechnung">Einheiten-Umrechnung</a><br>200m
+                        in cm
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div>&nbsp;</div>
+            <div class="row">
+                <div class="col-md-4"><h2 class="text-center"><a href="/fragen/">Mathe Forum</a></h2>
+                    <hr>
+                    <ul>
+                        <li><a href="/fragen/hallo-kann-mir-hier-jemand-diese-gleichung-nach-s">Hallo kann mir hier
+                            jemand diese Gleichung nach S auflösen: y=R-1/2*sqrt(4*R^2-S^2)</a></li>
+                        <li><a href="/fragen/schlecht">schlecht!!!!!</a></li>
+                        <li><a href="/fragen/hczcfhi">hczcfhi</a></li>
+                        <li><a href="/fragen/wasserbecken_1">Wasserbecken</a></li>
+                        <li><a href="/fragen/injektivit-t-und-surjektivit-t">Injektivität und Surjektivität</a></li>
+                        <li><a href="/fragen/rechner-nicht-erreichbar">Rechner nicht erreichbar?</a></li>
+                        <li><a href="/fragen/wie-rechnet-man-br-che-auf-rechner-also-taschen-rechner">wie rechnet man
+                            brüche auf rechner also taschen rechner</a></li>
+                        <li><a href="/fragen/kreisabschnitt-berechung-des-zugeh-rigen-zentriwinkels">Kreisabschnitt -
+                            Berechung des zugehörigen Zentriwinkels</a></li>
+                        <li><a href="/fragen/was-bedeutet-der-satz-des-pythagoras">Was bedeutet der Satz des
+                            Pythagoras?</a></li>
+                        <li><a href="/fragen/habe-hypothenuse-suche-kathete">habe Hypothenuse , suche Kathete.</a></li>
+                        <li><a href="/fragen/br-che-mit-ganze-zahlen-im-taschenrechner-eingeben">Brüche mit ganze Zahlen
+                            im Taschenrechner eingeben</a></li>
+                        <li><a href="/fragen/klammernauflosen">Klammernauflösen</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4"><h2 class="text-center"><a href="/formelsammlung/">Formeln</a></h2>
+                    <hr>
+                    <ul class="">
+                        <li><a href="/formelsammlung/mathematik">Mathematik</a>
+                            <ul class="">
+                                <li><a href="/formelsammlung/mathematik/algebra">Algebra</a>
+                                    <ul class="">
+                                        <li><a href="/formelsammlung/mathematik/algebra/mathrules">Rechenregeln</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/algebra/powers">Potenzen</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/algebra/log">Logarithmen</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/algebra/wurzeln">Wurzeln √</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/formelsammlung/mathematik/geometrie">Geometrie</a>
+                                    <ul class="">
+                                        <li><a href="/formelsammlung/mathematik/geometrie/kreis">Kreis ○</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/wuerfel">Würfel ❒</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/zylinder">Zylinder</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/sechseck">Hexagon
+                                            (Sechseck)</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/rechteck">Rechteck ▭</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/kugel">Kugel ❍</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/gerade">Gerade ⁄</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/quadrat">Quadrat □</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/geometrie/oktagon">Oktagon (Achteck)</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/formelsammlung/mathematik/finanzen">Finanzen</a>
+                                    <ul class="">
+                                        <li><a href="/formelsammlung/mathematik/finanzen/zinseszinsrechnung">Zinseszinsrechnung</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                        <li><a href="/formelsammlung/mathematik/finanzen/percent">Prozentrechnung</a>
+                                            <ul class=""></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/formelsammlung/mathematik/trigonometrie">Trigonometrie ◿</a>
+                                    <ul class=""></ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4"><h2 class="text-center"><a
+                        href="http://play.google.com/store/apps/details?id=com.britnex.web20calc_free">Android App</a>
+                </h2>
+                    <hr>
+                    <div class="text-center"><a
+                            href="http://play.google.com/store/apps/details?id=com.britnex.web20calc_free"><img
+                            class="img-thumbnail" alt="Android app auf Google Play" src="/img/web2.0calc_free.v1x0.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center"><br>
+        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+        <a title="terms of service / disclaimer" href="/nutzungsbedingungen/#disclaimer">Alle Informationen dieser
+            Webseite werden wie angegeben ohne Anspruch auf Richtigkeit, Vollständigkeit oder Aktualität zur Verfügung
+            gestellt.</a></div>
+</div>
+<ul id="inputhelpermenu" role="menu" class="dropdown-menu">
+    <li>
+        <form method="post">
+            <button type="submit" class="btn btn-default" name="inputtype" value="math"><span
+                    class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> Mathematik
+                Eingabezeile<sup>beta</sup></button>
+        </form>
+    </li>
+    <li class="divider"></li>
+    <li class="active"><a class="scientific" href="#">Wissenschaftlich</a></li>
+    <li><a class="programmer" href="#">Programmierer</a></li>
+    <li class="divider"></li>
+    <li class="dropdown-header">EINGABEHELFER</li>
+    <li><a class="fraction" href="#">Brüche</a></li>
+    <li><a class="solver" href="#">Gleichungen</a></li>
+    <li><a class="vector" href="#">Vektoren/Matrizen</a></li>
+    <li><a class="unit" href="#">Einheitenumrechner</a></li>
+</ul>
+<ul id="displaycontextmenu" class="dropdown-menu">
+    <li class="symbolic"><a class="expand" title="12" href="#">expand </a></li>
+    <li class="symbolic"><a class="simplify" title="12" href="#">simplify </a></li>
+    <li class="symbolic"><a class="diff" title="12" href="#">differentiate </a></li>
+    <li class="symbolic"><a class="int" title="12" href="#">integrate </a></li>
+    <li class="symbolic"><a class="factorize" title="12" href="#">factorize </a></li>
+    <li class="symbolic"><a class="limit" title="12" href="#">limit </a></li>
+    <li class="symbolic"><a class="solve" title="12" href="#">solve </a></li>
+    <li class="divider"></li>
+    <li><a class="precision" title="0" href="#">Auto <span class="glyphicon glyphicon-ok"></span></a></li>
+    <li><a class="precision" title="12" href="#">12 Nachkommastellen </a></li>
+    <li><a class="precision" title="18" href="#">18 Nachkommastellen </a></li>
+    <li><a class="precision" title="24" href="#">24 Nachkommastellen </a></li>
+    <li><a class="precision" title="30" href="#">30 Nachkommastellen </a></li>
+    <li><a class="precision" title="48" href="#">48 Nachkommastellen </a></li>
+    <li><a class="precision" title="60" href="#">60 Nachkommastellen </a></li>
+    <li class="divider"></li>
+    <li><a class="scientific" href="#">Standard (0.00011) <span class="glyphicon glyphicon-ok"></span></a></li>
+    <li><a class="scientific yes" href="#">Wissenschaftlich (1.1*10<sup>-4</sup>) </a></li>
+</ul>
+<noscript>
+    <div class="modal fade in" id="noscriptdialog" role="dialog" data-backdrop="static" style="display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h4 class="modal-title">Javascript ist nicht aktiviert.
+                </h4></div>
+                <div class="modal-body"><p>Diese Webseite <strong>erfordert</strong> JavaScript. Hier findest du
+                    Anleitungen wie <a href="http://enable-javascript.com/">JavaScript in deinem Browswer aktiviert
+                        werden kann</a>.
+                </p></div>
+                <div class="modal-footer">
+                    <form method="get">
+                        <button type="submit" class="btn btn-primary">Seite neu laden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4"><h3>Über Uns</h3>
+                    <ul>
+                        <li><a href="/impressum/">Impressum</a></li>
+                        <li><a href="/datenschutz/">Datenschutzrichtlinie</a></li>
+                        <li><a href="/nutzungsbedingungen/">Nutzungsbedingungen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4"><h3>Links</h3>
+                    <ul class="">
+                        <li><a href="/pricing/" rel="nofollow">Pricing</a></li>
+                        <li><a href="/credits/" rel="nofollow">Credits</a></li>
+                        <li><a href="/reportproblem/" rel="nofollow"><span class="glyphicon glyphicon-flag"
+                                                                           aria-hidden="true"></span> Problem melden</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4"><h3>Kontakt</h3>
+                    <ul>
+                        <li><a href="https://plus.google.com/108772686782622828406/posts"><span
+                                class="glyphicon glyphicon-globe"></span> Google+</a></li>
+                        <li><a target="_blank"
+                               href="https://www.facebook.com/Web-20-scientific-calculator-204577902909300/"><span
+                                class="glyphicon glyphicon-globe"></span> Facebook</a></li>
+                        <li><a href="mailto:britnex@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <form method="post" action="/cookieconsent"><small>
+                    <button class="btn btn-xs btn-default" id="withdrawconsentbtn" name="cookies" value="remove"
+                            type="submit">Zustimmung zu Cookies widerrufen
+                    </button>
+                </small></form>
+            </div>
+            <div class="row text-center">
+                <div class="footer-col col-md-12"><a href="https://web2.0calc.com/">web2.0calc.com</a> <a
+                        href="https://web2.0rechner.de/">web2.0rechner.de</a> <a href="https://web2.0calc.es/">web2.0calc.es</a>
+                    <a href="https://web2.0calc.fr/">web2.0calc.fr</a> <a
+                            href="https://web2.0calc.in/">web2.0calc.in</a> <a href="https://web2.0calc.ru/">web2.0calc.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center"><span class="copyright">Copyright 2006-2023 Andre Massow
+</span></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/js/web2.0calc.js?v129"></script>
+<script src="/js/precmp.js?v2"></script>
+<div class="modal" tabindex="-1" role="dialog" id="abmodal" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body"><p class="text-center"><img class="ayblock img-responsive" src="/img/loading.gif"
+                                                                alt="loading"><a href="../../../AppData/Roaming/JetBrains/WebStorm2023.2/scratches"
+                                                                                 class="hidden btn btn-default"><span
+                    class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a></p></div>
+            <div class="modal-footer">
+                <div class="text-left"><span class="glyphicon glyphicon-info-sign"
+                                             aria-hidden="true"></span>&nbsp;<strong>Ihr System hat erfolgreich Werbung
+                    auf dieser Website blockiert!
+                </strong><br><br>Alle großen Webbrowser beginnen damit, Tracking-Software und Werbung standardmäßig zu
+                    blockieren, um den Datenschutz zu verbessern.
+                    <br><br>Ich bitte Sie nicht, Ihren Werbeblocker zu deaktivieren, denn es gibt viele gute Gründe,
+                    einen zu verwenden.
+                    <br><br>Bitte geben Sie mir etwas Zeit, um diesen Dialog von dieser Website zu entfernen. Ich warte
+                    nur darauf, im Lotto zu gewinnen und es mir dann leisten kann, diese Website für 95% der Benutzer
+                    anzubieten, die diese Website ohne Werbung nutzen wollen. Wünschen Sie mir Glück!
+                    <br><br><i>Andre</i><br><br><br><a class="btn btn-default" href="/"><span
+                            class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Wiederholen
+                    </a>&nbsp;<a class="btn btn-default" href="/fragen/"><span class="glyphicon glyphicon-user"></span>
+                        Einloggen
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>window.showadsense = true;</script>
+<script src="/js/alternatives.js?v8"></script>
+<div class="dropdown-menu" id="quicklinkframe" style="display: none;">
+    <ul role="menu">
+        <li class="active graph" data-over="graph"><a href="#"><span class="glyphicon glyphicon-screenshot"></span>
+            Graph</a></li>
+    </ul>
+</div>
+</body>
+</html>
