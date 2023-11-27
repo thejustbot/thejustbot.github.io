@@ -15,15 +15,42 @@
 /* .vfrc-prompt {color: black;}*/
 
 .vfrc-prompt button[label="End Chat"]::after {
+    content: "End Chat";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Avsluta Chatt";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Beszélgetés vége";
+}
+.vfrc-prompt button[label="End Chat"]::after {
+    content: "Terminer la conversation";
+}
+.vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
 }
-
 .vfrc-prompt button[label=Cancel]::after {
- content: "Schließen";
+    content: "Cancel";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Avbryt";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Mégse";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Annulé";
+}
+.vfrc-prompt button[label=Cancel]::after {
+    content: "Schließen";
 }
 
 button.vfrc-button::after {
- content: "Neuen Chat Starten";
+    content: "Start New Chat";
+    content: "Starta Ny Chatt";
+    content: "Új beszélgetés indítása";
+    content: "Commencer une nouvelle conversation";
+    content: "Neuen Chat Starten";
 }
 /*
   CHAT WIDGET HEADER
