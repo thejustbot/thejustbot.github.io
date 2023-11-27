@@ -14,6 +14,22 @@
 
 /* .vfrc-prompt {color: black;}*/
 
+@charset "UTF-8";
+
+
+.vfrc-prompt button {
+    position: relative;
+    color: transparent;
+}
+.vfrc-prompt button::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: #ffffff;
+}
+
 .vfrc-prompt button[label="End Chat"]::after {
     content: "End Chat";
 }
@@ -80,7 +96,6 @@ button.vfrc-button::after {
 
 /* .vfrc-chat {} */
 
- .vfrc-chat--dialog {color:black;}
 
 /* .vfrc-chat--spacer {} */
 
