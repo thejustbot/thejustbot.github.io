@@ -1,27 +1,5 @@
 @charset "UTF-8";
-.vfrc-launcher {
-    background-color: #484848;
-}
-.vfrc-launcher:hover {
-    background-color: #000000;
-}
 
-.vfrc-chat {
-    background-color: #000000;
-}
-
-.vfrc-header,
-.vfrc-footer {
-    background-color: #000000;
-}
-
-::-webkit-scrollbar {
-    border-left: 1px solid #000000;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
 .vfrc-assistant-info--title {
     color: #ffffff;
