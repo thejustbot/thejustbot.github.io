@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*
 .vfrc-launcher {
     background-color: #484848;
 }
@@ -58,7 +59,7 @@
     font-weight: 700;
     border-color: black;
 }
-
+*/
 .vfrc-footer .vfrc-chat-input input {
     background-image: none;
 }
