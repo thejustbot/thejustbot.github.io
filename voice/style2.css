@@ -51,7 +51,7 @@
 .vfrc-button--secondary {
     background-color: #efefef;
     color: #000000;
-    border-color: gray;
+    border-color: grey;
 }
 
 .vfrc-button--secondary:hover {
@@ -117,36 +117,14 @@
     color: #ffffff;
 }
 
-.vfrc-prompt button[label="End Chat"]::after {
-    content: "End Chat";
-}
-.vfrc-prompt button[label="End Chat"]::after {
-    content: "Beszélgetés vége";
-}
-.vfrc-prompt button[label="End Chat"]::after {
-    content: "Terminer la conversation";
-}
+
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
-}
-.vfrc-prompt button[label="End Chat"]::after {
-    content: "Avsluta Chatt";
-}
-.vfrc-prompt button[label=Cancel]::after {
-    content: "Cancel";
-}
-.vfrc-prompt button[label=Cancel]::after {
-    content: "Mégse";
-}
-.vfrc-prompt button[label=Cancel]::after {
-    content: "Annulé";
-}
+
 .vfrc-prompt button[label=Cancel]::after {
     content: "Schließen";
 }
-.vfrc-prompt button[label=Cancel]::after {
-    content: "Avbryt";
-}
+
 
 button.vfrc-button--primary::after {
     content: "Start New Chat";
