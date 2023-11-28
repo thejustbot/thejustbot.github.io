@@ -6,7 +6,6 @@
   Customize the page that the chat bubble lives on
 */
 
- .voiceflow-chat {color:green}
 
 /* .vfrc-launcher {} */
 
@@ -21,14 +20,7 @@
         color: transparent;
     }
 
-    .vfrc-prompt button::after {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        inset: 0;
-        color: #ffffff;
-    }
+
 
 
 
@@ -40,9 +32,11 @@
         content: "Schließen";
     }
 }
+
     button.vfrc-button::after {
         content: "Neuen Chat Starten";
     }
+
 
 /*
   CHAT WIDGET HEADER
