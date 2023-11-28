@@ -21,7 +21,7 @@
         content: "Chat Beenden";
     }
 
-    .vfrc-prompt button[label=Cancel]::after {
+    .vfrc-prompt button[label="Cancel"]::after {
         content: "Schließen";
     }
 }
