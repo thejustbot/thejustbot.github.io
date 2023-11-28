@@ -82,9 +82,9 @@
     background-color: #AA0000;
 }
 
-/*.vfrc-prompt {
-    background-color: #000000;
-}*/
+.vfrc-prompt {
+    background-color: grey;
+}
 .vfrc-prompt button {
     position: relative;
     color: transparent;
