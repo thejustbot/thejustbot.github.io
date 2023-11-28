@@ -111,6 +111,6 @@
 }
 
 
-button.vfrc-button--primary::after {
+button.vfrc-button--primary::before {
     content: "Neuen Chat Starten";
 }
