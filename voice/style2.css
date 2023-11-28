@@ -120,7 +120,7 @@
 
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
-
+}
 .vfrc-prompt button[label=Cancel]::after {
     content: "Schließen";
 }
