@@ -111,6 +111,7 @@
 }
 
 
-button.vfrc-button--primary::before {
+button.vfrc-button--primary::after {
+    color: yellow;
     content: "Neuen Chat Starten";
 }
