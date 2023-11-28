@@ -35,6 +35,14 @@
     color: transparent;
 }
 
+.vfrc-footer button.vfrc-button::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: #ffffff;
+}
 .vfrc-footer .vfrc-chat-input--button .vfrc-bubble {
     background-color: #AA0000;
 }
