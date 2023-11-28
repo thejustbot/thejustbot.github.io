@@ -62,12 +62,7 @@
 .vfrc-footer .vfrc-chat-input input {
     background-image: none;
 }
-.vfrc-footer .vfrc-chat-input input::-moz-placeholder {
-    color: transparent;
-}
-.vfrc-footer .vfrc-chat-input input::placeholder {
-    color: transparent;
-}
+
 
 .vfrc-footer button.vfrc-button {
     position: relative;
@@ -112,6 +107,5 @@
 
 
 button.vfrc-button--primary::after {
-    color: yellow;
     content: "Neuen Chat Starten";
 }
