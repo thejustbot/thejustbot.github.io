@@ -111,3 +111,10 @@
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
 }
+
+.vfrc-chat--status::after{
+    .c-lajUCC{
+        content: "Sie sind dem Chat beigetreten"
+    }
+
+}
