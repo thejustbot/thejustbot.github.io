@@ -84,6 +84,7 @@
 
 .vfrc-prompt {
     background-color: grey;
+    color: transparent;
 }
 .vfrc-prompt button {
     position: relative;
