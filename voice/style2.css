@@ -89,6 +89,7 @@
 .vfrc-prompt button {
     position: relative;
     color: transparent;
+    transition: none;
 }
 .vfrc-prompt button::after {
     position: absolute;
