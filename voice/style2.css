@@ -119,3 +119,18 @@ button.vfrc-button--primary::after {
     }
 
 }*/
+/*should now not have a transition.// find out what the name of the message holding class is to change its content */
+.c-jZeVGh-igaDqE-type-subtle{
+    transition: none;
+}
+.c-jZeVGh{
+    transition: none;
+}
+/* .classname{display:none} .classname::after{content:"new content"} */
+.vfrc-chat--status{
+    display:none;
+}
+.vfrc-chat--status::after{
+    content:"Du hast den Chat beendet"
+}
+/*not sure if it works*/
