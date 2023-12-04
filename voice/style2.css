@@ -134,3 +134,10 @@ button.vfrc-button--primary::after {
     content:"Du hast den Chat beendet"
 }
 /*not sure if it works*/
+/*message*/
+.vfrc-chat-input{
+    color: transparent;
+}
+.vfrc-input[label="Message..."]::after{
+    content:"Nachricht.."
+}
