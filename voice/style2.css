@@ -121,11 +121,11 @@ button.vfrc-button--primary::after {
 }*/
 /*should now not have a transition.// find out what the name of the message holding class is to change its content */
 .c-jZeVGh-igaDqE-type-subtle{
-    transition: none;
+    transition: grey 15ms ease 0s;
 }
-.c-jZeVGh{
+/*.c-jZeVGh{
     transition: none;
-}
+}*/
 /* .classname{display:none} .classname::after{content:"new content"} */
 .vfrc-chat--status{
     display:none;
