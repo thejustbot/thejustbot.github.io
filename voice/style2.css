@@ -145,4 +145,7 @@ button.vfrc-button--primary::after {
     content:"Nachricht...";
 }
 /*today*/
-.vfrc-chat--session-time{color: transparent;}
+.vfrc-chat--session-time{
+    color: transparent;
+    display: none;
+}
