@@ -150,8 +150,9 @@ button.vfrc-button--primary::after {
     display: none;
 }
 /*or c-jNQfki*/
-.vfrc-chat-input::placeholder /*c-iZFrRI*/{
+.vfrc-chat-input-placeholder /*c-iZFrRI*/{
     color: yellow;
+    display: none;
    /* display: none;das ist die box*/
     /*display bezieht sich auf die box nicht aber auf den text im speziellen. der ist vermutlich als unterklasse bzw objekt vorhanden*/
 }
