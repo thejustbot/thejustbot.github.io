@@ -154,3 +154,8 @@ button.vfrc-button--primary::after {
     color: yellow;
     display: none;
 }
+/*try2 for message*/
+.vfrc-chat-input::placeholder{
+    color: yellow;
+    display: none;
+}
