@@ -152,7 +152,7 @@ button.vfrc-button--primary::after {
 /*or c-jNQfki*/
 .vfrc-chat-input /*c-iZFrRI*/{
     color: yellow;
-    display: none;
+   /* display: none;*/
 }
 /*try2 for message*/
 .vfrc-chat-input::placeholder{
