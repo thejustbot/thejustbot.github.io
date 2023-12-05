@@ -131,7 +131,7 @@ button.vfrc-button--primary::after {
     display:none;
 }
 .vfrc-chat--status::after{
-    content:"Du hast den Chat beendet"
+    content:"Du hast den Chat beendet";
 }
 /*not sure if it works*/
 /*message*/
@@ -139,5 +139,7 @@ button.vfrc-button--primary::after {
     color: red;
 }
 .vfrc-input[label="Message..."]::after{
-    content:"Nachricht.."
+    content:"Nachricht...";
 }
+/*today*/
+.vfrc-chat--session-time{color: transparent;}
