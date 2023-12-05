@@ -121,7 +121,7 @@ button.vfrc-button--primary::after {
 }*/
 /*should now not have a transition.// find out what the name of the message holding class is to change its content */
 .c-jZeVGh-igaDqE-type-subtle{
-    transition: grey 15ms ease 0s;
+    transition: blue 15ms ease 0s;
 }
 /*.c-jZeVGh{
     transition: none;
