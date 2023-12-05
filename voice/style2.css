@@ -136,9 +136,12 @@ button.vfrc-button--primary::after {
 /*not sure if it works*/
 /*message*/
 .vfrc-chat-input{
-    color: red;
+    color: yellow;
 }
 .vfrc-input[label="Message..."]::after{
+    content:"Nachricht...";
+}
+.vfrc-chat-input--button[label="Message..."]::after{
     content:"Nachricht...";
 }
 /*today*/
