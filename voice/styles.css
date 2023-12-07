@@ -1,23 +1,12 @@
-/* use this file to override default styles when forking this repository */
-
-/*
-  PAGE CONTENTS
-
-  Customize the page that the chat bubble lives on
-*/
-
-
-/* .vfrc-launcher {} */
-
-/* .vfrc-chat--overlay {} */
-
-
 @charset "UTF-8";
 .vfrc-prompt {
 
 
-
+    .vfrc-prompt button[label="End Chat"]{
+        visibility: hidden;
+    }
     .vfrc-prompt button[label="End Chat"]::after {
+        visibility: visible;
         content: "Chat Beenden";
     }
 

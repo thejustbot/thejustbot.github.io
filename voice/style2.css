@@ -48,13 +48,13 @@
 .vfrc-user-response .vfrc-message {
     background-color: #000000;
 }
-/*
+
 .vfrc-button--secondary {
     background-color: #efefef;
     color: #000000;
     border-color: grey;
 }
-*/
+
 .vfrc-button--secondary:hover {
     font-weight: 700;
     border-color: transparent;
@@ -64,11 +64,18 @@
     background-image: none;
 }
 
-
+/*?!?!?!*/
+.vfrc-footer button.vfrc-button {
+    position: relative;
+    background-color: darkgreen !important;
+    color: transparent;
+}
+/**/
 .vfrc-footer button.vfrc-button {
     position: relative;
     color: transparent;
 }
+/**/
 .vfrc-footer button.vfrc-button[label="Start new chat"] {
     visibility: hidden;
 }
@@ -87,7 +94,7 @@
 }
 
 .vfrc-prompt {
-    background-color: grey;
+    background-color: #000000;
     color: transparent;
 }
 .vfrc-prompt button {
@@ -111,62 +118,44 @@
 .vfrc-prompt button[label="Cancel"]::after {
     content: "Schließen";
 }
-/*.c-jZeVGh-igaDqE-type-subtle{} kann über ein hohes delay verstackt werden*/
-
-
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
 }
 
-/*.vfrc-chat--status::after{
-    .c-lajUCC{
-        content: "Sie sind dem Chat beigetreten"
-    }
-
-}*/
-/*should now not have a transition.// find out what the name of the message holding class is to change its content */
-.c-jZeVGh-igaDqE-type-subtle{
-    transition: blue 15s ease 0s;
-}
-/*.c-jZeVGh{
-    transition: none;
-}*/
-/* .classname{display:none} .classname::after{content:"new content"} */
 .vfrc-chat--status{
     display:none;
 }
 .vfrc-chat--status::after{
     content:"Du hast den Chat beendet";
 }
-/*not sure if it works*/
-/*message*/
-.vfrc-footer .vfrc-chat-input::placeholder{
-    color: yellow;
-}
+
 .vfrc-input[label="Message..."]::after{
     content:"Nachricht...";
 }
 .vfrc-chat-input--button[label="Message..."]::after{
     content:"Nachricht...";
 }
-/*today*/
+/*today nicht sichtbar*/
 .vfrc-chat--session-time{
-  /*  color: transparent; */
     display: none;
 }
-/*or c-jNQfki*/
-.vfrc-chat-input--c-iZFrRI{
-    .vfrc-chat-input::placeholder{
-        color: blue;
-    }
-   /* display: none;das ist die box*/
-    /*display bezieht sich auf die box nicht aber auf den text im speziellen. der ist vermutlich als unterklasse bzw objekt vorhanden*/
+
+/*message... :placeholder*/
+.vfrc-footer .vfrc-chat-input input {
+    background-image: none;
 }
-.vfrc-chat-input--c-iZFrRI::placeholder{
-    color: green;
+.vfrc-footer .vfrc-chat-input input::-moz-placeholder {
+    color: transparent;
 }
-/*try2 for message*/
-.vfrc-chat-input::placeholder{
-    color: purple;
-    display: none;
+.vfrc-footer .vfrc-chat-input input::placeholder {
+    color: transparent;
+}
+.vfrc-footer .vfrc-chat-input input:-moz-placeholder-shown {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Message...</text></svg>");
+    background-repeat: no-repeat;
+
+}
+.vfrc-footer .vfrc-chat-input input:placeholder-shown {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Nachricht...</text></svg>");
+    background-repeat: no-repeat;
 }
