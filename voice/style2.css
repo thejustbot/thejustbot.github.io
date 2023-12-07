@@ -109,6 +109,9 @@
 }
 /*.c-jZeVGh-igaDqE-type-subtle{} kann über ein hohes delay verstackt werden*/
 
+button.vfrc-button--primary{
+    display:none;
+}
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
 }
