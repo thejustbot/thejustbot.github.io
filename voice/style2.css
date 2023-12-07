@@ -68,8 +68,12 @@
 .vfrc-footer button.vfrc-button {
     position: relative;
     color: transparent;
-    font-size: 0px;
 }
+.vfrc-footer button.vfrc-button[label="Start new chat"] {
+    visibility: hidden;
+}
+
+
 .vfrc-footer button.vfrc-button::after {
     position: absolute;
     display: flex;
