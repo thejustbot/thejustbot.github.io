@@ -61,7 +61,7 @@
 }
 
 .vfrc-prompt {
-    background-color: #000000;/*ab hier*/
+    background-color: #ffffff;/*ab hier*/
 }
 .vfrc-prompt button {
     position: relative;
@@ -73,9 +73,12 @@
     align-items: center;
     justify-content: center;
     inset: 0;
-    color: #ffffff;
+    color: #000000;
 }
-
+/*test*/
+.vfrc-prompt button[label="Cancel"]{
+    visibility: hidden;
+}
 
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
