@@ -1,16 +1,8 @@
 @charset "UTF-8";
+
 /*
-.vfrc-launcher {
-    background-color: #484848;
-}
-.vfrc-launcher:hover {
-    background-color: #000000;
-}
 
-.vfrc-chat {
-    background-color: #484848;
-}
-
+//gute idee
 .vfrc-widget--chat {
     max-height: 100% !important;
 }
@@ -20,34 +12,14 @@
     background-color: #000000;
 }
 
-::-webkit-scrollbar {
-    border-left: 1px solid #000000;
-}
 
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
 .vfrc-assistant-info--title {
     color: #ffffff;
 }
 
-.vfrc-assistant-info--description,
-.vfrc-chat--session-time,
-.vfrc-timestamp,
-.vfrc-footer--watermark {
-    color: rgba(255, 255, 255, 0.8);
-}
-.vfrc-assistant-info--description a,
-.vfrc-chat--session-time a,
-.vfrc-timestamp a,
-.vfrc-footer--watermark a {
-    color: #ffffff;
-}
 
-.vfrc-user-response .vfrc-message {
-    background-color: #000000;
-}
+
 */
 .vfrc-button--secondary {
     background-color: #efefef;
@@ -89,8 +61,7 @@
 }
 
 .vfrc-prompt {
-    background-color: #ffffff;
-    color: transparent;
+    background-color: #000000;/*ab hier*/
 }
 .vfrc-prompt button {
     position: relative;
