@@ -54,12 +54,12 @@
     color: #000000;
     border-color: grey;
 }
-
+*/
 .vfrc-button--secondary:hover {
     font-weight: 700;
-    border-color: black;
+    border-color: transparent;
 }
-*/
+
 .vfrc-footer .vfrc-chat-input input {
     background-image: none;
 }
@@ -68,6 +68,7 @@
 .vfrc-footer button.vfrc-button {
     position: relative;
     color: transparent;
+    font-size: 0px;
 }
 .vfrc-footer button.vfrc-button::after {
     position: absolute;
