@@ -108,9 +108,7 @@
 }
 /*.c-jZeVGh-igaDqE-type-subtle{} kann über ein hohes delay verstackt werden*/
 
-button.vfrc-button--primary{
-    display:none;
-}
+
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
 }
@@ -137,7 +135,7 @@ button.vfrc-button--primary::after {
 }
 /*not sure if it works*/
 /*message*/
-.vfrc-footer .vfrc-chat-input{
+.vfrc-footer .vfrc-chat-input::placeholder{
     color: yellow;
 }
 .vfrc-input[label="Message..."]::after{
