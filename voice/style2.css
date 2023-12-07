@@ -64,18 +64,13 @@
     background-image: none;
 }
 
-/*?!?!?!*/
-.vfrc-footer button.vfrc-button {
-    position: relative;
-    /*background-color: darkgreen !important;*/
-    color: transparent;
-}
+
 /**/
 .vfrc-footer button.vfrc-button {
     position: relative;
     color: transparent;
 }
-/**/
+/*?? maybe display none*/
 .vfrc-footer button.vfrc-button[label="Start new chat"] {
     visibility: hidden;
 }
