@@ -44,11 +44,11 @@
 .vfrc-footer--watermark a {
     color: #ffffff;
 }
-*/
+
 .vfrc-user-response .vfrc-message {
     background-color: #000000;
 }
-
+*/
 .vfrc-button--secondary {
     background-color: #efefef;
     color: #000000;
@@ -67,7 +67,7 @@
 /*?!?!?!*/
 .vfrc-footer button.vfrc-button {
     position: relative;
-    background-color: darkgreen !important;
+    /*background-color: darkgreen !important;*/
     color: transparent;
 }
 /**/
@@ -94,7 +94,7 @@
 }
 
 .vfrc-prompt {
-    background-color: #000000;
+    background-color: #ffffff;
     color: transparent;
 }
 .vfrc-prompt button {
@@ -108,7 +108,7 @@
     align-items: center;
     justify-content: center;
     inset: 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 
