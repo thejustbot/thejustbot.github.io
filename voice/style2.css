@@ -135,7 +135,7 @@ button.vfrc-button--primary::after {
 }
 /*not sure if it works*/
 /*message*/
-.vfrc-chat-input{
+.vfrc-footer .vfrc-chat-input{
     color: yellow;
 }
 .vfrc-input[label="Message..."]::after{
