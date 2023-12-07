@@ -68,6 +68,7 @@
 .vfrc-footer button.vfrc-button {
     position: relative;
     /*background-color: yellowgreen !important;*/
+    display:none;
     color: transparent;
 }
 .vfrc-footer button.vfrc-button::after {
