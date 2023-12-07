@@ -44,11 +44,11 @@
 .vfrc-footer--watermark a {
     color: #ffffff;
 }
-
+*/
 .vfrc-user-response .vfrc-message {
     background-color: #000000;
 }
-
+/*
 .vfrc-button--secondary {
     background-color: #efefef;
     color: #000000;
@@ -67,8 +67,6 @@
 
 .vfrc-footer button.vfrc-button {
     position: relative;
-    /*background-color: yellowgreen !important;*/
-    display:none;
     color: transparent;
 }
 .vfrc-footer button.vfrc-button::after {
@@ -150,7 +148,7 @@ button.vfrc-button--primary::after {
 }
 /*today*/
 .vfrc-chat--session-time{
-    color: transparent;
+  /*  color: transparent; */
     display: none;
 }
 /*or c-jNQfki*/
