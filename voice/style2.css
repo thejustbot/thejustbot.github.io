@@ -96,11 +96,13 @@
     visibility: visible;
 }
 
-button.vfrc-button--primary{
+button.vfrc-button--primary{/*px changes*/
     color: transparent;
+    font-size: 0;
 }
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
+    font-size: 15px;
 }
 
 .vfrc-chat--status{
