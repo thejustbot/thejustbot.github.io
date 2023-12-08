@@ -85,6 +85,7 @@
 }
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
+    font-size: 15px;
 }
 
 .vfrc-prompt button[label="Cancel"]{
