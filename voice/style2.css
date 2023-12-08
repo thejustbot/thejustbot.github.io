@@ -76,19 +76,13 @@
     color: #000000;
 }
 /*test*/
-.vfrc-prompt button[label="End Chat"]{
-    visibility: hidden;
-}
+
 .vfrc-prompt button[label="Cancel"]{
-    visibility: hidden;
-}
-button.vfrc-button--primary{
     visibility: hidden;
 }
 
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
-    visibility: visible;
 }
 .vfrc-prompt button[label="Cancel"]::after {
     content: "Schließen";
@@ -96,7 +90,6 @@ button.vfrc-button--primary{
 }
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
-    visibility: visible;
 }
 
 .vfrc-chat--status{
