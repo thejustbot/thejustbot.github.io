@@ -48,14 +48,7 @@
 }
 
 
-.vfrc-footer button.vfrc-button::after {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    inset: 0;
-    color: #ffffff;
-}
+
 .vfrc-footer .vfrc-chat-input--button .vfrc-bubble {
     background-color: #AA0000;
 }
@@ -67,6 +60,16 @@
     position: relative;
     color: transparent;
 }
+
+/*test*/
+.vfrc-footer button.vfrc-button::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: #ffffff;
+}
 .vfrc-prompt button::after {
     position: absolute;
     display: flex;
@@ -75,8 +78,6 @@
     inset: 0;
     color: #000000;
 }
-/*test*/
-
 
 .vfrc-prompt button[label="End Chat"]{
     color: transparent;
