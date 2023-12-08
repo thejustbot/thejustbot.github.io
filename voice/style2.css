@@ -97,7 +97,6 @@
 
 button.vfrc-button--primary{
     color: transparent;
-    display: none;
 }
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
