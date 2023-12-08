@@ -88,6 +88,7 @@ button.vfrc-button--primary{
 
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
+    visibility: visible;
 }
 .vfrc-prompt button[label="Cancel"]::after {
     content: "Schließen";
@@ -95,6 +96,7 @@ button.vfrc-button--primary{
 }
 button.vfrc-button--primary::after {
     content: "Neuen Chat Starten";
+    visibility: visible;
 }
 
 .vfrc-chat--status{
