@@ -76,7 +76,13 @@
     color: #000000;
 }
 /*test*/
+.vfrc-prompt button[label="End Chat"]{
+    visibility: hidden;
+}
 .vfrc-prompt button[label="Cancel"]{
+    visibility: hidden;
+}
+button.vfrc-button--primary{
     visibility: hidden;
 }
 
