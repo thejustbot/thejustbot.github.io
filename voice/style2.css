@@ -1,26 +1,5 @@
 @charset "UTF-8";
 
-/*
-
-//gute idee
-.vfrc-widget--chat {
-    max-height: 100% !important;
-}
-
-.vfrc-header,
-.vfrc-footer {
-    background-color: #000000;
-}
-
-
-
-.vfrc-assistant-info--title {
-    color: #ffffff;
-}
-
-
-
-*/
 .vfrc-button--secondary {
     background-color: #efefef;
     color: #000000;
@@ -37,12 +16,12 @@
 }
 
 
-/**/
+
 .vfrc-footer button.vfrc-button {
     position: relative;
     color: transparent;
 }
-/*?? maybe display none*/
+
 .vfrc-footer button.vfrc-button[label="Start new chat"] {
     visibility: hidden;
 }
@@ -54,7 +33,7 @@
 }
 
 .vfrc-prompt {
-    background-color: #ffffff;/*ab hier*/
+    background-color: #ffffff;
 }
 .vfrc-prompt button {
     position: relative;
