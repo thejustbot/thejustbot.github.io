@@ -26,12 +26,18 @@
     visibility: hidden;
 }
 
-
-
+/*
 .vfrc-footer .vfrc-chat-input--button .vfrc-bubble {
     background-color: #AA0000;
 }
-
+*/
+.vfrc-footer .vfrc-bubble {
+    background-color: #AA0000;
+}
+.vfrc-footer .vfrc-chat-input--button {
+    background-color: yellow;
+}
+/*sdfgsdfsdfsdfsdf*/
 .vfrc-prompt {
     background-color: #ffffff;
 }
