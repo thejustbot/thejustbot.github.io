@@ -31,9 +31,9 @@
     background-color: #AA0000;
 }
 */
-.vfrc-footer .vfrc-bubble {
+/*.vfrc-footer .vfrc-bubble {
     background-color: #AA0000;
-}
+}*/
 
 /*sdfgsdfsdfsdfsdf*/
 .vfrc-prompt {
@@ -69,6 +69,7 @@
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
     font-size: 15px;
+    background-color: yellow; /*asdasd*/
 }
 
 .vfrc-prompt button[label="Cancel"]{
