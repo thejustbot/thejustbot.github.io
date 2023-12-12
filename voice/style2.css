@@ -69,7 +69,7 @@
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
     font-size: 15px;
-    background-color: yellow; /*asdasd*/
+    background-color: #AA0000; /*asdasd*/
 }
 
 .vfrc-prompt button[label="Cancel"]{
