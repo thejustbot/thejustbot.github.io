@@ -59,7 +59,7 @@
     align-items: center;
     justify-content: center;
     inset: 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 .vfrc-prompt button[label="End Chat"]{
@@ -69,6 +69,7 @@
 .vfrc-prompt button[label="End Chat"]::after {
     content: "Chat Beenden";
     font-size: 15px;
+    color: #ffffff
     /*background-color: #AA0000; /*chat beenden button*/
 }
 
